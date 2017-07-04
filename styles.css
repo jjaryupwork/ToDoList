@@ -25,7 +25,7 @@ font-weight: bold;
 .delete ,#add{
 border-top: 1px solid #96d1f8;
 background: #061926;
-background: -webkit-gradient(linear, left top, left bottom, from(#423e9c), to(#061926));
+background: linear-gradient(0deg,#423e9c,#061926 40%);
 padding: 6.5px 13px;
 border-radius: 6px;
 color: white;
@@ -39,7 +39,7 @@ border-top-color: #0e8f86;
 background: #0e8f86;
 color: #ccc;
 }
-.delte:active, #add:active {
+.delete:active, #add:active {
 border-top-color: #021e30;
 background: #021e30;
 }
