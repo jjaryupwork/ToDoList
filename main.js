@@ -12,6 +12,6 @@ function deleteItem(){
 $(function(){
 	$("#add").on('click', addListItem);
 	
-	$(document).on('click', '.delete', deleteItem);
+	$(this).on('click', '.delete', deleteItem);
 	
 });

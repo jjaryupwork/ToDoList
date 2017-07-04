@@ -1,55 +1,45 @@
- ul li input:checked + label {
-  text-decoration: line-through;
+input:checked + label {
+text-decoration: line-through;
 }
 ul li {
-	list-style: none;
+list-style: none;
+}
+body{
+margin: 0;
 }
 div{
-	background-image: url("./background4.jpg");
-	height: 100vh;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
+background-image: url("./background4.jpg");
+height: 100vh;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;	
 }
 h1, label{
-	-webkit-text-stroke: 2px #000000;
+-webkit-text-stroke: 2px #000000;
 -webkit-text-fill-color: #FFFFFF;
 font-size: 2.5em;
 font-weight: bold;
 }
-
-
 .delete ,#add{
-   border-top: 1px solid #96d1f8;
-   background: #061926;
-   background: -webkit-gradient(linear, left top, left bottom, from(#423e9c), to(#061926));
-   background: -webkit-linear-gradient(top, #423e9c, #061926);
-   background: -moz-linear-gradient(top, #423e9c, #061926);
-   background: -ms-linear-gradient(top, #423e9c, #061926);
-   background: -o-linear-gradient(top, #423e9c, #061926);
-   padding: 6.5px 13px;
-   -webkit-border-radius: 6px;
-   -moz-border-radius: 6px;
-   border-radius: 6px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 11px;
-   font-family: Georgia, Serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
+border-top: 1px solid #96d1f8;
+background: #061926;
+background: -webkit-gradient(linear, left top, left bottom, from(#423e9c), to(#061926));
+padding: 6.5px 13px;
+border-radius: 6px;
+color: white;
+font-size: 11px;
+font-family: Georgia, Serif;
+text-decoration: none;
+vertical-align: middle;
+}
 .delete:hover, #add:hover {
-   border-top-color: #0e8f86;
-   background: #0e8f86;
-   color: #ccc;
-   }
+border-top-color: #0e8f86;
+background: #0e8f86;
+color: #ccc;
+}
 .delte:active, #add:active {
-   border-top-color: #021e30;
-   background: #021e30;
-   }
+border-top-color: #021e30;
+background: #021e30;
+}
