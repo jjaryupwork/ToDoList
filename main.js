@@ -1,17 +1,19 @@
+
 function addListItem(){
 	var text = $("#new-text").val();
-	$("#todolist").append('<li><input type="checkbox" class="done"/><label>'+text+' </label><button class="delete">Delete</button></li>');
+	$("#todolist").append('<li><label><input type="checkbox"/><span>'+text+'</span></label><button class="delete">Delete</button></li>');
 	$("#new-text").val('');
 	
 }
-function deleteItem(){
-	$(this).parent().remove();
+function deleteItem(eventArg) {
+  var myElem = $(eventArg.target);
+  if (myElem.hasClass('delete')) {
+    eventArg.stopPropagation();
+	  myElem.parent().remove();
+  }
 }
 
-
-$(function(){
+$(function() {
 	$("#add").on('click', addListItem);
-	
-	$(this).on('click', '.delete', deleteItem);
-	
+	$("#todolist").on('click', deleteItem);
 });

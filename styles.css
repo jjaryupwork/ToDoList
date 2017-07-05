@@ -1,45 +1,45 @@
-input:checked + label {
-text-decoration: line-through;
+.listContainer input:checked + span {
+  text-decoration: line-through;
 }
-ul li {
-list-style: none;
+.listContainer ul li {
+  list-style: none;
 }
-body{
-margin: 0;
+body {
+  margin: 0;
 }
-div{
-background-image: url("./background4.jpg");
-height: 100vh;
-background-size: cover;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;	
+.listContainer {
+  background-image: url("./background4.jpg"); 
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;	
 }
-h1, label{
--webkit-text-stroke: 2px #000000;
--webkit-text-fill-color: #FFFFFF;
-font-size: 2.5em;
-font-weight: bold;
+.listContainer h1, .listContainer span {
+  -webkit-text-stroke: 2px #000000;
+  -webkit-text-fill-color: #FFFFFF;
+  font-size: 2.5em;
+  font-weight: bold;
 }
-.delete ,#add{
-border-top: 1px solid #96d1f8;
-background: #061926;
-background: linear-gradient(0deg,#423e9c,#061926 40%);
-padding: 6.5px 13px;
-border-radius: 6px;
-color: white;
-font-size: 11px;
-font-family: Georgia, Serif;
-text-decoration: none;
-vertical-align: middle;
+.listContainer .delete , .listContainer #add{
+  border-top: 1px solid #96d1f8;
+  background: #061926;
+  background: linear-gradient(0deg, #423e9c, #061926 40%);
+  padding: 6.5px 13px;
+  border-radius: 6px;
+  color: white;
+  font-size: 11px;
+  font-family: Georgia, Serif;
+  text-decoration: none;
+  vertical-align: middle;
 }
-.delete:hover, #add:hover {
-border-top-color: #0e8f86;
-background: #0e8f86;
-color: #ccc;
+.listContainer .delete:hover, .listContainer #add:hover {
+  border-top-color: #0e8f86;
+  background: #0e8f86;
+  color: #ccc;
 }
-.delete:active, #add:active {
-border-top-color: #021e30;
-background: #021e30;
+.listContainer .delete:active, .listContainer #add:active {
+  border-top-color: #021e30;
+  background: #021e30;
 }
